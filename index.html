@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Credit Broker</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="description" content="The transparent, quick and easy way to compare home loans & lenders" />
+	<meta name="keywords" content="ircx, credit, broker, credit broker, calculate, compare" />
+	<meta name="author" content="PiggyDev" />
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="css/animate.css" type="text/css">
+	<link rel="stylesheet" href="css/transition-animations.css" type="text/css">
+	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body class="material-template">
+	<!-- Loading animation -->
+	<div class="preloader">
+		<div class="preloader-animation">
+			<div class="preloader-spinner">
+			</div>
+		</div>
+	</div>
+	<!-- /Loading animation -->
+
+	<div id="page" class="page">
+		<!-- Header -->
+		<header id="site_header" class="header mobile-menu-hide">
+			<div class="header-content">
+				<div class="site-title-block mobile-hidden">
+					<a class="navbar-brand pt-trigger" href="#home"><img src="images/logo.png" alt=""></a>
+				</div>
+
+				<!-- Navigation -->
+				<div class="site-nav">
+					<!-- Main menu -->
+					<ul id="nav" class="site-main-menu">
+						<li style="display: none">
+							<a class="pt-trigger" href="#home" data-animation="62">Home</a>
+							<!-- href value = data-id without # of .pt-page. -->
+						</li>
+						<li style="display: none">
+							<a class="pt-trigger" href="#contact" data-animation="62">Contact</a>
+						</li>
+						<li>
+							<a class="ajax-page-load" href="pop1.html" data-animation="62">Small Print</a>
+						</li>
+						<li>
+							<a class="ajax-page-load" href="pop2.html" data-animation="62">Let's Talk About</a>
+						</li>
+						<li>
+							<a class="ajax-page-load" href="pop3.html" data-animation="62">Work With Us</a>
+						</li>
+					</ul>
+					<!-- /Main menu -->
+				</div>
+				<!-- Navigation -->
+			</div>
+		</header>
+		<!-- /Header -->
+
+		<!-- Mobile Header -->
+		<div class="mobile-header mobile-visible">
+			<div class="mobile-logo-container">
+				<div class="mobile-site-title"><a href="#home"><img src="images/logo-m.png" alt=""></a></div>
+			</div>
+
+			<a class="menu-toggle mobile-visible">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+		<!-- /Mobile Header -->
+
+		<!-- Main Content -->
+		<div id="main" class="site-main">
+			<!-- Page changer wrapper -->
+			<div class="pt-wrapper">
+				<!-- Subpages -->
+				<div class="subpages">
+
+					<!-- Home Subpage -->
+					<section class="pt-page" data-id="home">
+						<div class="section-inner start-page-content">
+							<div class="page-header">
+								<div class="row">
+									<div>
+										<div class="title-block">
+											<h1>The transparent, quick and easy way to compare<br>home loans & lenders<br>with Australia’s most transparent comparison platform.</h1>
+										</div>
+
+									</div>
+									<div class="agreement">
+										<input type="checkbox" style="transform: scale(1.2)"> I have read and agree to the Comparison Terms of
+										Use
+									</div>
+									<div class="comparison-btn disabled">
+										<a href="#contact" class="btn btn-secondary">Start my comparison please</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="page-content">
+								<div class="row">
+									<div class="col-sm-12 text-center">
+										<ul class="info-list">
+											<p>© 2002-2019 Complete Lending Solutions Pty Limited ABN 96 101 182 987 |
+												Australian Credit License 378240 | <a
+													href="https://cls.com.au/terms-and-conditions">Terms & Conditions <br>
+												</a><a href="https://cls.com.au/">cls.com.au | </a><a
+													href="http://qedrealty.com.au/">qedrealty.com.au | </a><a
+													href="https://bidsquare.com.au/">bidsquare.com.au</a></p>
+										</ul>
+										
+										<div class="social-links">
+											<a href="#"><i class="fa fa-twitter"></i></a>
+											<a href="#"><i class="fa fa-facebook"></i></a>
+											<a href="#"><i class="fa fa-instagram"></i></a>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- End of Home Subpage -->
+
+					<!-- Contact Subpage -->
+					<section class="pt-page" data-id="contact">
+						<div class="section-inner custom-page-content">
+							<div class="page-header color-1">
+								<h2>What would you like to compare today?</h2>
+							</div>
+							<div class="page-content">
+
+								<div class="row">
+									<div class="col-md-12 form-block">
+										<div class="form-box">
+											<div class="block-title">
+												<h3>Fill the <span>form below</span></h3>
+											</div>
+											<form id="contact-form">
+
+												<div class="form-group">
+													<div class="row">
+														<div class="col-sm-4 col-xs-12">
+															<label>Security Value:</label>
+														</div>
+														<div class="col-sm-8 col-xs-12">
+															<input class="security" type="text" name="currency-field" id="currency-field"
+																pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value=""
+																data-type="currency" placeholder="$1,000,0.00">
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="col-sm-4 col-xs-12">
+															<label>Loan Amount:</label>
+														</div>
+														<div class="col-sm-8 col-xs-12">
+															<input class="amount" type="text" name="currency-field" id="currency-field"
+																pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value=""
+																data-type="currency" placeholder="$1,000,0.00">
+																<input class="lvr" type="text" placeholder="LVR:">
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="col-sm-4 col-xs-12">
+															<label>Loan Purpose:</label>
+														</div>
+														<div class="col-sm-8 col-xs-12">
+															<a href="javascript:void(0)" class="owner active">owner occupied</a>
+															<a href="javascript:void(0)" class="investment">investment</a>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="col-sm-4 col-xs-12">
+															<label>Interest Rate Type:</label>
+														</div>
+														<div class="col-sm-8 col-xs-12">
+															<a href="javascript:void(0)" class="variable active">variable</a>
+															<a href="javascript:void(0)" class="fixed">fixed</a>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="col-sm-4 col-xs-12">
+															<label>Repayment Type:</label>
+														</div>
+														<div class="col-sm-8 col-xs-12">
+															<a href="javascript:void(0)" class="principal active">principal & interest</a>
+															<a href="javascript:void(0)" class="interest">interest only</a>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="col-sm-4 col-xs-12">
+															<label>Offset Account:</label>
+														</div>
+														<div class="col-sm-8 col-xs-12">
+															<a href="javascript:void(0)" class="offset active">offset account</a>
+															<a href="javascript:void(0)" class="nooffset">no offset account</a>
+														</div>
+													</div>
+												</div>
+
+												<div class="g-recaptcha"
+													data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI"></div>
+
+												<input type="submit" class="button btn-send" value="Perform my comparison please">
+												<a href="#home" class="btn btn-secondary">Back to home</a>
+										</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+				</section>
+				<!-- End Contact Subpage -->
+
+			</div>
+		</div>
+		<!-- /Page changer wrapper -->
+	</div>
+	<!-- /Main Content -->
+	</div>
+	<footer>
+		<div class="copyrights">WARNING | Spam Act 2003 (Commonwealth) | Commercial messages are not wanted.</div>
+	</footer>
+
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/pages-switcher.js"></script>
+	<script type="text/javascript" src="js/validator.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
